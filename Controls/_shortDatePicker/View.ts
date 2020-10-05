@@ -166,7 +166,7 @@ var Component = BaseControl.extend({
             const popupLeft = options.stickyPosition.position.left;
             // Вычисляем смещения попапа влево, т.к окно выравнивается по центру открывающего элемента
             const popupOffset = (options.stickyPosition.sizes.width - options.stickyPosition.targetPosition.width) / 2;
-            this._closeBtnPosition = (popupLeft + popupOffset) === openerLeft ?
+            this._closeBtnPosition = (popupLeft + popupOffset) === openerLeft || popupLeft === 0 ?
                 POSITION.RIGHT :
                 POSITION.LEFT;
         }
