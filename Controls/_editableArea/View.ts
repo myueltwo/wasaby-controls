@@ -185,8 +185,7 @@ View._theme = ['Controls/list', 'Controls/editableArea', 'Controls/Classes'];
 View.getDefaultOptions = function () {
    return {
       autoEdit: false,
-      toolbarVisible: false,
-      backgroundStyle: 'default'
+      toolbarVisible: false
    };
 };
 
